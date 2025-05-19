@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2048 Reloaded - Fullscreen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icons/icon.png" />
+  <style>
+    #ad-banner {
+      width: 100%;
+      height: 90px;
+      background: #222;
+      color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+    #support-btn {
+      background: #ff4081;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 10px auto;
+    }
+    .fullscreen-wrapper {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="fullscreen-wrapper">
+    <h1 style="text-align: center;">2048: Reloaded</h1>
+    <div id="game-container">
+      <div class="top-bar">
+        <h2 id="mode-name">Classic Mode</h2>
+        <a href="index.html"><button>Back</button></a>
+      </div>
+      <div id="game-board" class="board"></div>
+      <div id="score-board">Score: <span id="score">0</span></div>
+    </div>
+
+    <!-- Ads Section -->
+    <div id="ad-banner">
+      <!-- Replace with your real ad script -->
+      <span>Your Ad Here</span>
+    </div>
+
+    <!-- Support Button -->
+    <div style="text-align: center;">
+      <a href="https://www.buymeacoffee.com/YOURNAME" target="_blank" id="support-btn">💖 Support This Game</a>
+    </div>
+
+    <audio id="merge-sound" src="sounds/merge.mp3"></audio>
+    <audio id="move-sound" src="sounds/move.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
